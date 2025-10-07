@@ -7,7 +7,8 @@ dotenv.config();
 const connectDB = async () => {
     try {
         console.log('🔗 Connecting to MongoDB replica set...');
-        const MONGODB_URI ='mongodb://alice:alicePassword@64.227.187.164:27017/medical_project?authSource=admin&replicaSet=rs0'
+        const MONGODB_URI ='mongodb://admin:StrongPass123!@localhost:27017/?authSource=admin&replicaSet=rs0'
+
         
         const conn = await mongoose.connect(MONGODB_URI, {
             // 🎯 OPTIMIZED for 2vCPU, 16GB RAM droplet

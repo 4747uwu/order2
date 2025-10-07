@@ -22,7 +22,7 @@ import axios from 'axios';
 // Get __dirname equivalent for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const DOCX_SERVICE_URL = 'http://64.227.187.164:8777/api/document/generate';
+const DOCX_SERVICE_URL = 'http://206.189.139.34:8777/api/document/generate';
 
 // 🔧 FIX: Define TEMPLATES_DIR constant
 const TEMPLATES_DIR = path.join(__dirname, '../templates');
