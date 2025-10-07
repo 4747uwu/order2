@@ -49,7 +49,7 @@ jobs:
           
           # Clean up and get fresh code
           rm -rf MProject
-          git clone https://github.com/4747uwu/MProject.git
+          git clone https://github.com/4747uwu/order2.git
           
           # Navigate to the MedicalProject subdirectory
           cd MProject/MedicalProject
