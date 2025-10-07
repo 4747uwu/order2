@@ -4,7 +4,7 @@ import { Link, Navigate, useNavigate, useLocation } from 'react-router-dom';
 // 🆕 ADD: Import the logo
 // 🆕 ADD: Import the logo
 // 🆕 ADD: Import the logo
-import starRadiologyLogo from '../../assets/starradiology_logo-1 (1).png';
+import starRadiologyLogo from '../../assets/logo.png';
 
 
 const UniversalNavbar = () => {
