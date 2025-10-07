@@ -78,4 +78,4 @@ volumes:
 
 networks:
   medical-network:
-    driver: bridge
+    external: true
