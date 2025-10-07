@@ -9,10 +9,11 @@ dotenv.config();
 import User from './models/userModel.js';
 import Lab from './models/labModel.js';
 import Doctor from './models/doctorModel.js';
+ const MONGODB_URI ='mongodb://meduser:SecurePass_2025@mongo-rs:27017/?authSource=admin&replicaSet=rs0'
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect(process.env.MONGODB_URI, {
+        const conn = await mongoose.connect(MONGODB_URI, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
