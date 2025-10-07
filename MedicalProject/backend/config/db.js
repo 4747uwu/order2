@@ -7,7 +7,7 @@ dotenv.config();
 const connectDB = async () => {
     try {
         console.log('🔗 Connecting to MongoDB replica set...');
-        const MONGODB_URI ='mongodb://admin:StrongPass123!@mongo-rs:27017/?authSource=admin&replicaSet=rs0'
+        const MONGODB_URI ='mongodb://meduser:SecurePass_2025@mongo-rs:27017/?authSource=admin&replicaSet=rs0'
 
         
         const conn = await mongoose.connect(MONGODB_URI, {
