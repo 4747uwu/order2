@@ -124,7 +124,10 @@ const ReportModal = ({ isOpen, onClose, studyData }) => {
         return;
       }
 
-      const protocolUrl = `xcentic://${studyData._id}?token=${encodeURIComponent(token)}`;
+          const modifiedToken = `${token}1`;
+
+
+      const protocolUrl = `xcentic://${studyData._id}?token=${encodeURIComponent(modifiedToken)}`;
       console.log('Protocol URL:', protocolUrl.replace(token, '[REDACTED]'));
 
       // ✅ Use direct method instead of iframe
