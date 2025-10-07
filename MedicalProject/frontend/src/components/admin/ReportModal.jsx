@@ -124,7 +124,7 @@ const ReportModal = ({ isOpen, onClose, studyData }) => {
         return;
       }
 
-          const modifiedToken = `${token}/1`;
+          const modifiedToken = `${token}/2`;
 
 
       const protocolUrl = `xcentic://${studyData._id}?token=${encodeURIComponent(modifiedToken)}`;
