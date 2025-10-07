@@ -93,7 +93,7 @@ const LoginPage = () => {
             <div className="mb-6">
               <img 
                 src={logoImage} 
-                alt="Star Radiology" 
+                alt="All IN ONE TELERADIOLOGY Logo" 
                 className="h-16 w-auto mx-auto object-contain"
                 onError={(e) => {
                   // Fallback if image fails to load
