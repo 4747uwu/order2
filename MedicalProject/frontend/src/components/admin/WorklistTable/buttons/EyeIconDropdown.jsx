@@ -34,8 +34,8 @@ const EyeIconDropdown = React.memo(({ studyInstanceUID, userRole }) => {
       const orthancUsername = 'alice';
       const orthancPassword = 'alicePassword';
       
-      const ohifUrl = new URL(`${ohifBaseURL}/viewer`);
-      ohifUrl.searchParams.set('StudyInstanceUIDs', studyInstanceUID);
+      // Construct URL in the format: http://host/viewer/<StudyInstanceUID>
+      const ohifUrl = new URL(`${ohifBaseURL}/viewer/${encodeURIComponent(studyInstanceUID)}`);
       
       const dataSourceConfig = {
         namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
