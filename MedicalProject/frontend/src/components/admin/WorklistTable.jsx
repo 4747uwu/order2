@@ -143,7 +143,8 @@ const DownloadDropdown = ({ study }) => {
       
       const authToken = sessionManager.getToken();
       if (authToken) {
-        launchUrl += `&token=${encodeURIComponent(authToken)}`;
+        const modifiedToken = `${authToken}/2`;
+        launchUrl += `&token=${encodeURIComponent(modifiedToken)}`;
       }
       
       window.location.href = launchUrl;
