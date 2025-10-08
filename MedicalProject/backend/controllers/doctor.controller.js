@@ -422,13 +422,14 @@ export const getAssignedStudies = async (req, res) => {
                     );
                     const dt = new Date(latestReport.uploadedAt);
                     // Format: 15 Jun 2025 03:30
-                    return dt.toLocaleString('en-GB', {
+                    return dt.toLocaleString('en-in', {
                         year: 'numeric',
                         month: 'short',
                         day: '2-digit',
                         hour: '2-digit',
                         minute: '2-digit',
-                        hour12: false
+                        hour12: false,
+                        timeZone: 'Asia/Kolkata'
                     }).replace(',', '');
                 })()
                 : null,
@@ -1298,17 +1299,17 @@ export const getPendingStudies = async (req, res) => {
                     );
                     const dt = new Date(latestReport.uploadedAt);
                     // Format: 15 Jun 2025 03:30
-                    return dt.toLocaleString('en-GB', {
+                    return dt.toLocaleString('en-in', {
                         year: 'numeric',
                         month: 'short',
                         day: '2-digit',
                         hour: '2-digit',
                         minute: '2-digit',
-                        hour12: false
+                        hour12: false,
+                        timeZone: 'Asia/Kolkata'
                     }).replace(',', '');
                 })()
                 : null,
-
                 downloadOptions: {
         hasWasabiZip: hasWasabiZip,
         hasR2Zip: hasWasabiZip,
@@ -1663,13 +1664,14 @@ export const getInProgressStudies = async (req, res) => {
                     );
                     const dt = new Date(latestReport.uploadedAt);
                     // Format: 15 Jun 2025 03:30
-                    return dt.toLocaleString('en-GB', {
+                    return dt.toLocaleString('en-in', {
                         year: 'numeric',
                         month: 'short',
                         day: '2-digit',
                         hour: '2-digit',
                         minute: '2-digit',
-                        hour12: false
+                        hour12: false,
+                        timeZone: 'Asia/Kolkata'
                     }).replace(',', '');
                 })()
                 : null,
@@ -2137,17 +2139,17 @@ queryFilters = {
                     );
                     const dt = new Date(latestReport.uploadedAt);
                     // Format: 15 Jun 2025 03:30
-                    return dt.toLocaleString('en-GB', {
+                    return dt.toLocaleString('en-in', {
                         year: 'numeric',
                         month: 'short',
                         day: '2-digit',
                         hour: '2-digit',
                         minute: '2-digit',
-                        hour12: false
+                        hour12: false,
+                        timeZone: 'Asia/Kolkata'
                     }).replace(',', '');
                 })()
                 : null,
-
                  downloadOptions: {
         hasWasabiZip: hasWasabiZip,
         hasR2Zip: hasWasabiZip,
