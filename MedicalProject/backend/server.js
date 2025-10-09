@@ -78,7 +78,8 @@ const allowedOrigins = process.env.NODE_ENV === 'production'
         'https://portal.xcentic.in',
         'https://ai.starradiology.com',
                 'http://ai.starradiology.com',
-                'http://206.189.139.34'
+                'http://206.189.139.34',
+                'https://aio.allinoneteleradiology.com'
 
                // ✅ Local HTTPS testing
       ]
@@ -94,7 +95,8 @@ const allowedOrigins = process.env.NODE_ENV === 'production'
         'https://portal.xcentic.in',
         'http://ai.starradiology.com',
                 'https://ai.starradiology.com',
-                'http://206.189.139.34'
+                'http://206.189.139.34',
+                'https://aio.allinoneteleradiology.com'
 
       ];
 
