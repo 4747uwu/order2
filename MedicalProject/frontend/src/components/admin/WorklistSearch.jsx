@@ -451,7 +451,7 @@ const selectedLocationLabel = useMemo(() => {
     <div className="h-full w-full flex flex-col">
       {/* 🎯 SINGLE LINE: Compact Search-First Design */}
       <div className="relative">
-        <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
+        <div className="bg-orange-100 rounded-lg border border-gray-200 shadow-sm">
           
           {/* 🚀 RESPONSIVE: All controls - horizontal on desktop, vertical on mobile */}
           <div className="px-3 py-2 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">

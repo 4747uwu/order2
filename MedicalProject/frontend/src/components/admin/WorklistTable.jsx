@@ -724,9 +724,9 @@ const cardGrid = useMemo(() => (
       <div className="bg-white w-full h-full rounded-xl shadow-xl border border-gray-200 flex flex-col">
         
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-b border-gray-200 rounded-lg flex-shrink-0">
-          <div className="bg-gray-400 text-white p-1 rounded-t-lg">
+          <div className="bg-gray-800 text-white p-1 rounded-t-lg">
             <div className="flex items-center justify-between">
-              <h1 className="text-sm text-black font-bold tracking-wide flex-shrink-0">WORKLIST</h1>
+              <h1 className="text-sm text-white font-bold tracking-wide flex-shrink-0">WORKLIST</h1>
               <div className="flex items-center space-x-2 min-w-0">
                 <div className="hidden lg:flex items-center h-[30px] bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
                   {['all', 'pending', 'inprogress', 'completed'].map(tab => (
@@ -821,7 +821,7 @@ const cardGrid = useMemo(() => (
                               let baseClasses = "flex items-center w-full h-full transition-colors duration-150 hover:bg-gray-200";
                               if (isEmergency) return isSelected ? `${baseClasses} bg-red-200 hover:bg-red-300` : `${baseClasses} bg-red-100 hover:bg-red-200`;
                               if (isSelected) return `${baseClasses} bg-blue-50 hover:bg-blue-100`;
-                              return `${baseClasses} ${index % 2 === 0 ? 'bg-white' : 'bg-gray-100'}`;
+                              return `${baseClasses} ${index % 2 === 0 ? 'bg-orange-100' : 'bg-orange-50'}`;
                             };
                             
                             return (

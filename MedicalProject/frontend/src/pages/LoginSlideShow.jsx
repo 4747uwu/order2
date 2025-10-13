@@ -5,37 +5,39 @@ const LoginSlideshow = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Define slides with real Unsplash images
+// ...existing code...
   const slides = [
     {
       title: "Experts on the go!",
       subtitle: "Around The World.",
       description: "Access to global specialists and comprehensive healthcare resources.",
-      color: "bg-gradient-to-br from-blue-500 to-blue-600",
+      color: "bg-gradient-to-br from-orange-500 to-blue-600",
       image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       title: "Multiple Laboratories",
       subtitle: "Precision & Accuracy",
       description: "State-of-the-art lab equipment and experienced technicians for reliable results.",
-      color: "bg-gradient-to-br from-teal-500 to-teal-600",
+      color: "bg-gradient-to-br from-orange-500 to-teal-600",
       image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       title: "Secure Medical Records",
       subtitle: "Easy Access Anywhere",
       description: "Your patient data is always secure yet accessible when needed.",
-      color: "bg-gradient-to-br from-indigo-500 to-indigo-600",
+      color: "bg-gradient-to-br from-orange-500 to-indigo-600",
       image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       title: "Expert Medical Care",
       subtitle: "Professional Excellence",
       description: "Dedicated healthcare professionals committed to your wellbeing.",
-      color: "bg-gradient-to-br from-purple-500 to-purple-600",
+      color: "bg-gradient-to-br from-orange-500 to-blue-600",
       image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     
   ];
+// ...existing code...
 
   // Auto-rotate slides
   useEffect(() => {
